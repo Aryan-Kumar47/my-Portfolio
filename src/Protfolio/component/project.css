@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Belleza');
+@import url('https://fonts.googleapis.com/css2?family=Fragment+Mono&display=swap');
+
+
+
+.body{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* position: relative; */
+}
+
+.preview {
+  position: absolute;
+  width: 350px;
+  height: 250px;
+  overflow: hidden;
+  pointer-events: none;
+  opacity: 0;
+  /* transform-origin: center;
+  transform: scale(0); */
+  z-index: 10;
+}
+
+.preview-img{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.containerr{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.project{
+  /* width: 100%;
+  font-size: clamp(2em,8.889vw,100vw);
+  */
+  transition: opacity .2s linear;
+  width: 100%;
+  text-transform: uppercase;
+  white-space: nowrap;
+  font-size: 8em;
+  font-size: clamp(2em,8vw,100vw);
+  line-height: 1em;
+  text-align: center;
+  z-index: 9;
+  cursor: pointer;
+}
+.project:hover{
+  opacity: 1;
+}
+
+.margin-bottom{
+  margin-bottom: clamp(30px,3.819vw,100vw);
+  /* margin-bottom: 80px; */
+  text-align: center;
+}
+
+.project-heading{
+  font-family: 'Fragment Mono', monospace;
+  font-size: .875em;
+  font-size: clamp(.875em,.972vw,100vw);
+  text-transform: uppercase;
+  line-height: 1.4em;
+}

@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* scroll-behavior: smooth; */
+  color-scheme: light;
+}
+
+body{
+  overflow-x: hidden;
+
+  background-color: #2E2A27;
+  color: #fff;
+  /* background-color: rgb(236, 193, 148);
+  color: rgb(69, 34, 18); */
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.2;
+}
+
+.headline{
+  font-family: 'Faustina', serif;
+  font-size: clamp(1.875em, 6.571vw, 100vw);
+  line-height: 1em;
+  text-transform: uppercase;
+}
+.header{
+  font-family: 'Faustina', serif;
+  text-shadow: 2px 2px 8px #000000;
+}
+
+div{
+  display: block;
+}
+
+
+.button {
+  font-size: 1.5em;
+  font-size: clamp(.875em,1.667vw,30px);
+  text-transform: uppercase;
+  line-height: 1em;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #FFFFFF;
+  border-radius: 50px;
+  transition: border-radius .25s ease;
+  text-rendering: geometricPrecision;
+  padding-top: clamp(12px,0.833vw,16px);
+  padding-bottom: clamp(12px,0.833vw,16px);
+  padding-left: clamp(16px,1.111vw,100vw);
+  padding-right: clamp(16px,1.111vw,100vw);
+  width: auto;
+  }
+  
+  .techicon{
+  font-size: 1.5em;
+  font-size: clamp(.875em,1.667vw,60px);
+  text-transform: uppercase;
+  line-height: 1em;
+  text-rendering: geometricPrecision;
+  width: auto;
+}
+
+.button:hover{
+  border-radius: 0px;
+}
+
+@media only screen and (min-width: 992px){
+  .button {
+    padding-left: clamp(20px,1.389vw,100vw);
+    padding-right: clamp(20px,1.389vw,100vw);
+  }
+}
+
+::-webkit-scrollbar{
+  height: 0;
+  width: 0;
+}
